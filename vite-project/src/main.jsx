@@ -1,10 +1,31 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 
+function MyApp(){
+  return(
+    <div>
+        <h1>custom app</h1>
+    </div>
+  )
+}
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
+const anotherElement=(
+  <a href="https://google.com" target='_black'>Visit google</a>
+)
+
+const anotherUser="chai aur react"
+
+const reactElement= React.createElement(
+  'a',
+  {href: 'https:/google.com',target: 'click me to visit google'},
+  'click me to visit gogle',
+  anotherUser
+
+)
+
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  
+  < App />
 )

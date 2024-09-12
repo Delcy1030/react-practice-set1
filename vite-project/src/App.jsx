@@ -1,9 +1,14 @@
 
 
 
+
 function App() {
+  const username = "chai aur code"
   return(
-    <h1>react with vite</h1>
+    <>
+    <h1>react with vite {username}</h1>
+    <p>test para</p>
+    </>
   )
 
  
